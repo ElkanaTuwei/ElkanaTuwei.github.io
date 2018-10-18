@@ -6,7 +6,7 @@
 </head>
 <body style="position: relative;">
 <h1>Conversational form</h1>
-<form cf-form id="cf-form"  action="https://elkanatuwei.github.io" cf-create-id="1539859060508" style="height: auto;
+<form cf-form id="cf-form"  action="https://elkanatuwei.github.io" cf-create-id="1539859060508" style="height: -webkit-fill-available;
     margin-top: 0px;
     margin-bottom: 0px;">
 					<fieldset>
@@ -37,29 +37,51 @@
 						<div class="radio">
 							<label>
 								<input type="radio" name="occupation" id="occupation-2" value="lost" tabindex="-1">
-								Lost cause
+								Other
 							</label>
 						</div>
 					</fieldset>
 
 					<fieldset>
-						<label for="company">Company</label>
-						<input cf-questions="Which company are you with?" type="text" class="form-control" name="company" id="company" tabindex="-1">
+  
+    <div>
+        <label for="start">Start</label>
+        <input cf-questions="When are you ready to start?" type="date" id="start" name="trip"
+               value="2018-07-22"
+               min="2018-01-01" max="2018-12-31" />
+    </div>
+
+
+</fieldset>
+							<fieldset>
+						<label for="model">Model</label>
+						<input cf-questions="What is the Make and model of your car?" type="text" class="form-control" name="model" id="model" tabindex="-1">
 					</fieldset>
 
-					<fieldset>
-						<label for="opinion">Will conversational interfaces be everywhere?</label>
-						<select cf-questions="Do you think conversational forms will replace web forms in the future?" name="opinion" id="opinion" class="form-control" tabindex="-1">
-							<option></option>
-							<option tabindex="-1">Definitely</option>
-							<option tabindex="-1">Maybe</option>
-							<option tabindex="-1">No</option>
-						</select>
+							</fieldset>
+							<fieldset>
+						<label for="body">Body</label>
+						<input cf-questions="What is type of body of your {previous-answer}?" type="text" class="form-control" name="body" id="body" tabindex="-1">
 					</fieldset>
+
+										<fieldset>
+						<label for="registration">Registration</label>
+						<input cf-questions="And it's Registration Number..." type="text" class="form-control" name="registration" id="registration" tabindex="-1">
+					</fieldset>
+										<fieldset>
+						<label for="EngineSize">EngineSize</label>
+						<input cf-questions="How big is your engine?" type="phone" class="form-control" name="EngineSize" id="EngineSize" tabindex="-1">
+					</fieldset>
+					<fieldset>
+						<label for="company">Company</label>
+						<input cf-questions="Which purpose does you car serve mostly?" type="text" class="form-control" name="company" id="company" tabindex="-1">
+					</fieldset>
+
+					
 
 					<fieldset>
 						<label for="email">Email</label>
-						<input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="If you want to stay updated on conversational interfaces from SPACE10, please give me your email." type="email" class="form-control" name="email" id="your-email" tabindex="-1">
+						<input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="Please give me your email so that i can reach you." type="email" class="form-control" name="email" id="your-email" tabindex="-1">
 					</fieldset>
 
 					<fieldset style="display: none;">
@@ -72,7 +94,7 @@
 
 					<fieldset style="display: none;">
 						<label for="thats-all">Want to start over?</label>
-						<select cf-questions="Want to start over?" name="repeat" id="repeat" class="form-control" tabindex="-1">
+						<select cf-questions="SUBMITTED. Want to start over?" name="repeat" id="repeat" class="form-control" tabindex="-1">
 							<option></option>
 							<option tabindex="-1">Yes, let's go again</option>
 						</select>
