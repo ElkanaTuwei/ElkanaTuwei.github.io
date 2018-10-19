@@ -60,8 +60,39 @@
 							</fieldset>
 							<fieldset>
 						<label for="body">Body</label>
-						<input cf-questions="What is BodyType of  of your {previous-answer}?" type="text" class="form-control" name="body" id="body" tabindex="-1">
+						   
+    <div class="radio">
+      <label>
+              <input cf-questions="Nice model. What's its BodyType|Awesome choice for a model! And what is the BodyType of your {previous-answer}?" type="radio" name="body" id="body-1" value="sedan">
+                Sedan
+            </label>
+    </div>
+    <div class="radio">
+      <label>
+              <input type="radio" name="body" id="body-2" value="SUV">
+                SUV
+            </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="body" id="body-3" value="Hatchback">
+                Hatchback
+            </label>
+    </div>
+    <div class="radio">
+      <label>
+                <input type="radio" name="body" id="body-4" value="Convertible">
+                Convertible
+            </label>
+    </div>
+    <div class="radio">
+      <label>
+                <input type="radio" name="body" id="body-5" value="other">
+                Other
+            </label>
+    </div>
 					</fieldset>
+
 
 										<fieldset>
 						<label for="registration">Registration</label>
